@@ -12,7 +12,7 @@ class DocumentationTest extends TestCase
     {
         $content = (new Documentation)->get('1.0', 'stub', base_path('tests/helpers/stubs'));
 
-        $this->assertContains('<p>Here is the documentation stub.</p>', $content);
+        $this->assertContains('<p>Here is the documentation stub for version 1.0.</p>', $content);
     }
 
     /** @test */
